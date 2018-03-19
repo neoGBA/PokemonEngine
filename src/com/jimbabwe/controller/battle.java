@@ -2,6 +2,8 @@ package com.jimbabwe.controller;
 
 public class battle {
 	
+	//MAKE CONSTRUCTOR PASSING IN ENEMY TEAM? (and Levels)
+	
 	public battle() {
 		startBattle();
 		inBattle();

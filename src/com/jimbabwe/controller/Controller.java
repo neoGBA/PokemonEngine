@@ -8,12 +8,15 @@ import org.newdawn.slick.SlickException;
 
 public class Controller extends BasicGame{
 	
+	boolean battle = false;
+	
 	public Controller() {
 		super("Pokemon Engine");
 	}
 
 	public void start() {
 		buildWindow();
+		battle fight = new battle();
 	}
 	
 	public void buildWindow() {

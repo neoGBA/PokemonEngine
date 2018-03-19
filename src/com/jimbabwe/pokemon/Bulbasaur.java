@@ -1,5 +1,7 @@
 package com.jimbabwe.pokemon;
 
+import java.util.Random;
+
 public class Bulbasaur {
 	
 	String type = "Grass";
@@ -12,6 +14,14 @@ public class Bulbasaur {
 	int baseSpecialDefense = 65;
 	int baseSpeed = 45;
 	
+	int HPIV;
+	int attackIV;
+	int defenseIV;
+	int specialAttackIV;
+	int specialDefenseIV;
+	int speedIV;
+	
+	int HP;
 	int attack;
 	int defense;
 	int specialAttack;
@@ -19,7 +29,21 @@ public class Bulbasaur {
 	int speed;
 	
 	public Bulbasaur(int level) {
-		//determine stats based on base stats
+		//put each task in generic method to be used for each pokemon
+		
+		//calculate IVs
+		Random rand = new Random();
+		HPIV = rand.nextInt(31);
+		attackIV = rand.nextInt(31);
+		defenseIV = rand.nextInt(31);
+		specialAttackIV = rand.nextInt(31);
+		specialDefenseIV = rand.nextInt(31);
+		speedIV = rand.nextInt(31);
+		
+		//Calculate stats
+		formulas formula = new formulas();
+		HP = formula.calculateHP(baseHP, HPIV, level);
+		
 		//determine moves by level
 	}
 	
