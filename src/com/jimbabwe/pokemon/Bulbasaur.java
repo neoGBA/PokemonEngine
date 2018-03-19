@@ -12,6 +12,12 @@ public class Bulbasaur {
 	int baseSpecialDefense = 65;
 	int baseSpeed = 45;
 	
+	int attack;
+	int defense;
+	int specialAttack;
+	int specialDefence;
+	int speed;
+	
 	public Bulbasaur(int level) {
 		//determine stats based on base stats
 		//determine moves by level
